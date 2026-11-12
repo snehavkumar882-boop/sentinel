@@ -1,0 +1,3 @@
+timestamp,service_id,version,deployed_by,config_diff,status,description
+2026-09-28T09:50:00+00:00,payment-api-service,v1.8.2,cicd-pipeline,"{""db_connection_pool_size"": {""previous"": 100, ""current"": 15}, ""db_pool_timeout_ms"": {""previous"": 5000, ""current"": 500}}",SUCCESS,Payment gateway update v1.8.2: performance tuning & connection pool limit reduction.
+2026-09-28T10:35:00+00:00,payment-api-service,v1.8.3-rollback,sre-oncall,"{""db_connection_pool_size"": {""previous"": 15, ""current"": 100}, ""db_pool_timeout_ms"": {""previous"": 500, ""current"": 5000}}",SUCCESS,Hotfix rollback restoring default DB pool capacity and timeout parameters.
